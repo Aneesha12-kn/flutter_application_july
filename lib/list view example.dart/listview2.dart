@@ -13,10 +13,13 @@ class ListView2 extends StatelessWidget {
     'Data5',
    
   ];
-  var subti = [20, 30, 40, 50, 100, 140, 150, 310, 200, 190];
-var images=[
-,
-
+  var subti = [20, 30, 40, 50, 100,];
+var image=[
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKJwhBpP9dO9A_yH_FVIKC-wCDh5v4r-OXWQ&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReFjO6rbNAKcZtfgpqkhnqWGPwcH5hAArN1A&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3CQDEO83utmrNSsVt4QtJrmGqM2Dg0gej5g&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReFjO6rbNAKcZtfgpqkhnqWGPwcH5hAArN1A&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3CQDEO83utmrNSsVt4QtJrmGqM2Dg0gej5g&usqp=CAU",
 ];
 
   @override
@@ -26,7 +29,7 @@ var images=[
         title: Text("ListView 2"),
       ),
       body: ListView(
-        children: List.generate(10, (index) =>
+        children: List.generate(5, (index) =>
             Card(
               child: ListTile(
                 title: Text(title[index]),
@@ -35,10 +38,12 @@ var images=[
                // trailing: Icon(icons[index]),
                // trailing: Icon(Icons.shopping_cart),
                leading: CircleAvatar(
-                backgroundImage: AssetImage("assets/icon/instagram.png")),
+              backgroundImage: NetworkImage(image[index]),
+      
+             
               ),
             )),
       ),
-    );
+    ),);
   }
 }
