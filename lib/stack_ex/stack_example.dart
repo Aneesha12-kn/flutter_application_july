@@ -24,14 +24,14 @@ class Stackex extends StatelessWidget{
           top:280,
           left:180,
         child:  Container(
-            height: 500,
-            width: 500,
+            height: 300,
+            width: 300,
             color: Colors.green,
 
           ),),
             Container(
-            height: 500,
-            width: 500,
+            height: 400,
+            width: 400,
             color: Colors.yellow,
 
           ),
