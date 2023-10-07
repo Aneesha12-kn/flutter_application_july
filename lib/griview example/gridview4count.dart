@@ -51,12 +51,12 @@ var price=[
            ),
 
          Text(
-            "{name[index]}",
+           ( "{name[index]}"),
             style: TextStyle(fontSize: 50),
            ),
          
          const Text(
-          "{price[index]}"
+          ("{price[index]}"),
          ),
          ],
           
