@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_july/storages/login.dart';
+import 'package:flutter_application_july/storages/simple%20login/login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Home_shared extends StatefulWidget{
@@ -32,7 +32,7 @@ body:Center(
     children: [
       Text("Welcome $uname"),
      const  SizedBox(
-        height: 20,
+        height: 30,
       ),
       
       ElevatedButton(onPressed: (){
