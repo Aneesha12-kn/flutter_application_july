@@ -14,9 +14,9 @@ class MusicUI extends StatefulWidget {
 
 class _MusicUIState extends State<MusicUI> {
   var images =[
-    'asset/images/img_16.png',
-    'asset/images/img_15.png',
-    'asset/images/img_17.png'
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjsh77kKyKSmtFBFQBoK3Cxc2Z4FV0snT19w&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSle50wpeRpG9zMWjIIGuQE4FB9k7Bc0arkCw&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPX0eOx5AoSl488IpmCrH4EHOvicuZ8jNxzQ&usqp=CAU'
   ];
 
   var music=[
@@ -24,36 +24,36 @@ class _MusicUIState extends State<MusicUI> {
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7sds_vsSowAWC1SdTxE6QNE7hNZvIDQxmLQ&usqp=CAU',
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QqK3LkfUKSUsTa7vcy43x3KK624DGW0Vjw&usqp=CAU',
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_oy3F3nJIj9IU6SraJkMqlYY--wAppi7uQ&usqp=CAU',
-    '',
-    'asset/images/img_24.png',
-    'asset/images/img_25.png',
-    'asset/images/img_18.png',
-    'asset/images/img_26.png',
-    'asset/images/img_27.png'
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTecE77-TPQ_GqPNiFGHlQwL7chgpAWcff68A&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcRgdp_360vmd056pyccCyZuZ2B7aEals8ZQ&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjZ5_1iRV0EAKNdfgnpabbcMCzw4x6hGHF1g&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx0INO4FtYc_lxeD4fQckxBsHx9wv0Q1YLtQ&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_sy8bOuzfC-_ZeEunDRwCGfgRflnrNVBmTg&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSykcwMntKSM4tDNog53jr3V91KY7Zdgcsxjw&usqp=CAU'
   ];
   var artist=[
     ' Nithya Mammen, Ayraan, Kailas',
     'sia',
     ' Arijit Singh, Shilpa Rao',
     'Arijit Singh, Tulsi Kumar',
-    'Eve',
-    'Ruth B',
-    'the Weeknd',
-    'Ikimonogakari',
-    'Taylor Swift',
-    'Jeon Jungkook',
+    'Rahat Fateh Ali Khan',
+    ' Dhanush, Anirudh Ravichander',
+    'Aditya',
+    ' Darshan Raval',
+    ' Armaan Malik',
+    'Arijit Singh, Alka Yagnik',
   ];
   var title=[
-    'Never Give Up',
+    'Alare',
     'Binks No Sake',
-    'Gurenge',
-    'Suzume no Tojimari',
-    'Kaikai Kitan',
-    'Dandelions',
-    'Starboy',
-    'Blue Bird',
-    'Love Story',
-    'Still with you',
+    'Chaleya',
+    'Hum Nashe Metera',
+    'Ore piyaa',
+    'Megham karukatha',
+    'Chaand baaliya',
+    'ASal Mein',
+    'Main rahoon',
+    'Agar tum saath ho',
   ];
   int currentIndex=0;
 
@@ -84,7 +84,7 @@ class _MusicUIState extends State<MusicUI> {
                     child: ClipRRect(
                         borderRadius:
                         BorderRadius.circular(45),
-                        child: Image.asset(images[index])),
+                        child: Image.network(images[index])),
                   ),
                 )),
           ),
@@ -105,7 +105,7 @@ class _MusicUIState extends State<MusicUI> {
               child: ListTile(
                 leading: Container(height: 55,width: 55,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
-                      image: DecorationImage(image: AssetImage(music[index]),fit: BoxFit.cover)
+                      image: DecorationImage(image: NetworkImage(music[index]),fit: BoxFit.cover)
                   ),
                   // child: Image.asset(sugg[index])
                 ),
